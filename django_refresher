@@ -1,0 +1,5 @@
+
+
+
+Open up a Django Shell Session:
+python manage.py shell
