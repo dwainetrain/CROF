@@ -1,0 +1,11 @@
+git status
+
+git add
+
+git commit -am "Notes"
+
+git push origin master
+
+---
+
+git pull origin master
