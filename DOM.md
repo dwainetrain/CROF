@@ -1,5 +1,6 @@
 The current DOM spec:
 https://dom.spec.whatwg.org
+Consider searching web with these for more information “WHATWG [term]” or “MDN [term]”
 
 Related Specs:
 https://www.w3.org/TR/cssom-1/#introduction
