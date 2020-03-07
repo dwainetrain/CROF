@@ -55,3 +55,34 @@ ReactDOM.render(<Hello />, root)
 About JSX:
 - Babel transpiles the jsx into valid javascript, which is why it needs to be included as a tool if you wish to use jsx.
 - jsx tags must be closed
+- Conditional rendering in jsx: https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/
+
+-- Common List Pattern --
+```jsx
+class Hello extends React.Component{
+  render() {
+    let {to, from, favorite_foods} = this.props
+    return (
+      <div>
+        <h1>Hello, to {to} from {from}!</h1>
+        <ul>
+          {favorite_foods.map(item => <li>{item}</li>)}
+        </ul>
+      </div>
+    )
+  }
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+      <Hello to="Paul" from="Ringo" favorite_foods={["pizza", "cake", "Edamame"]}/>
+      <Hello to="Chic" from="Correa" favorite_foods={["rice", "beans", "chicpeas"]}/>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, root)
+```
