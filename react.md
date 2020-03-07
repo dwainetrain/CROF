@@ -51,6 +51,10 @@ function Hello() {
 
 ReactDOM.render(<Hello />, root)
 ```
+-- Setting Up Your Dev Environment on a Mac --
+Easiest way - Create React App (CRA)
+Install Node
+npx create-react-app <app-name>
 
 About JSX:
 - Babel transpiles the jsx into valid javascript, which is why it needs to be included as a tool if you wish to use jsx.
