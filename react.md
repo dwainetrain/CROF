@@ -38,7 +38,7 @@ class Hello extends React.Component{
   }
 }
 
-ReactDOM.render(<Hello />, root)
+ReactDOM.render(<Hello />, document.getElementById('root'))
 ```
 
 --- And a Very Basic Function Componenet ---
@@ -49,7 +49,7 @@ function Hello() {
   )
 }
 
-ReactDOM.render(<Hello />, root)
+ReactDOM.render(<Hello />, document.getElementById('root'))
 ```
 -- Setting Up Your Dev Environment on a Mac --
 Easiest way - Create React App (CRA)
